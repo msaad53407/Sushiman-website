@@ -1,0 +1,148 @@
+.trending {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.trending-sushi,
+.trending-drink {
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  flex-direction: row;
+}
+
+.trending__content {
+  padding: 32px 64px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trending__list {
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trending__list li {
+  flex: 1;
+  display: flex;
+  min-width: 210px;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.trending__icon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+}
+
+.trending__icon img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.trending__list p {
+  font-family: var(--plus-jakarta-sans);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.trending__image {
+  flex: 1;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: var(--color-white);
+  padding: 32px 64px;
+}
+
+.trending-sushi .trending__image {
+  background-color: white;
+  background-image: url("../../assets/japanese_sushi.png");
+}
+.trending-drink .trending__image {
+  background-color: white;
+  background-image: url("../../assets/japanese_drinks.png");
+}
+
+.trending__image img {
+  width: 254px;
+  height: 260px;
+  object-fit: contain;
+}
+
+.trending__discover {
+  position: absolute;
+  top: 45%;
+  left: 44%;
+  height: 160px;
+  width: 160px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 100%;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.trending__discover p {
+  font-family: var(--plus-jakarta-sans);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Arrows */
+.trending__arrow {
+  position: absolute;
+  z-index: 1;
+}
+
+.trending__arrow img {
+  object-fit: contain;
+}
+
+.trending__arrow-left {
+  left: -2.5px;
+  top: 18%;
+}
+
+.trending__arrow-left img,
+.trending__arrow-top img {
+  width: auto;
+  height: 100%;
+}
+
+.trending__arrow-top {
+  top: -10.5px;
+  left: 12%;
+}
+
+.trending__arrow-bottom {
+  bottom: -6.5px;
+  right: 12%;
+}
+
+.trending__arrow-bottom img,
+.trending__arrow-right img {
+  width: 100%;
+  height: auto;
+  rotate: 180deg;
+}
+
+.trending__arrow-right {
+  right: -2.5px;
+  bottom: 12%;
+}
